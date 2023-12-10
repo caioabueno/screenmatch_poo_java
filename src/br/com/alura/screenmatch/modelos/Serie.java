@@ -1,11 +1,17 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie extends Titulo {
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+public class Serie extends Titulo implements Classificavel {
     //atributos
     private int temporadas;
     private int episodiosPorTemporada;
     private boolean ativa;
     private int minutosPorEpisodio;
+
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
 
     //métodos
     @Override
@@ -13,14 +19,17 @@ public class Serie extends Titulo {
         super.exibeFichaTecnica();
         System.out.println("Numero de temporadas: " + temporadas);
         System.out.println("Episodios por temporada: " + episodiosPorTemporada);
+        //operador ternário
         System.out.println("A série está ativa? " + (ativa ? "Sim" : "Não"));
         System.out.println("Minutos por episodio " + minutosPorEpisodio);
+        System.out.println("Duração em minutos: " + getDuracaoEmMinutos());
     }
 
     @Override
     public int getDuracaoEmMinutos(){
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
+
 
     //getters setters
     public int getTemporadas() {
@@ -54,4 +63,13 @@ public class Serie extends Titulo {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
 
+    @Override
+    public String toString(){
+        return "Série: " + getNome() + " (" + getAnoDeLancamento() + ")";
+    }
+
+    @Override
+    public int getClassificacao() {
+        return (int) (pegaMedia() / 2);
+    }
 }
