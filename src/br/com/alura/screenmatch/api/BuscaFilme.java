@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.apis;
+package br.com.alura.screenmatch.api;
 
 import java.net.URI;
 import java.util.Scanner;
@@ -22,4 +22,5 @@ public class BuscaFilme {
     public URI getEndereco() {
         return endereco;
     }
+
 }

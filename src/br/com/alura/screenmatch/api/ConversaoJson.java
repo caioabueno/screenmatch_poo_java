@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.apis;
+package br.com.alura.screenmatch.api;
 
 import br.com.alura.screenmatch.modelos.Titulo;
 import br.com.alura.screenmatch.modelos.TituloOmdb;
@@ -50,4 +50,5 @@ public class ConversaoJson {
     public TituloOmdb getObjetoConvertido() {
         return objetoConvertido;
     }
+
 }

@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.apis;
+package br.com.alura.screenmatch.api;
 
 import br.com.alura.screenmatch.excecoes.ConversaoDeAnoException;
 
@@ -7,10 +7,8 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.Scanner;
 
 public class Requisicao {
-
     private String resposta;
     public String abreRequisicao(URI endereco) {
         try {

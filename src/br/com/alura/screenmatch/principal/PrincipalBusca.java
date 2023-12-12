@@ -1,9 +1,9 @@
 package br.com.alura.screenmatch.principal;
 
 
-import br.com.alura.screenmatch.apis.BuscaFilme;
-import br.com.alura.screenmatch.apis.ConversaoJson;
-import br.com.alura.screenmatch.apis.Requisicao;
+import br.com.alura.screenmatch.api.BuscaFilme;
+import br.com.alura.screenmatch.api.ConversaoJson;
+import br.com.alura.screenmatch.api.Requisicao;
 import br.com.alura.screenmatch.modelos.Titulo;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +26,7 @@ public class PrincipalBusca {
             if (busca.equalsIgnoreCase("sair")) {
                 break;
             }
+
             System.out.println("abrindo requisição...");
             requisicao.abreRequisicao(buscador.getEndereco());
 
