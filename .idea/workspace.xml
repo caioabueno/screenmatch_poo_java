@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ca6a421-5cc0-4178-aeca-8ca7c6dac38b" name="Changes" comment="Projeto completo">
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/BuscaFilme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/ConversaoJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/Requisicao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/excecoes/ConversaoDeAnoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/TituloOmdb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalBusca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalLista.java" afterDir="false" />
+    <list default="true" id="1ca6a421-5cc0-4178-aeca-8ca7c6dac38b" name="Changes" comment="fixup! Organização da classe PrincipalBusca, criação de classes no pacote api para delegar funções das requisições.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenmatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/screenmatch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/filmes.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/filmes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/BuscaFilme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/api/BuscaFilme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/ConversaoJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/api/ConversaoJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/apis/Requisicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/api/Requisicao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalBusca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalBusca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <recent name="br.com.alura.screenmatch.excecoes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PrincipalBuscaRefatorado">
+  <component name="RunManager" selected="Application.PrincipalBusca">
     <configuration name="PrincipalBusca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.PrincipalBusca" />
       <module name="screenmatch" />
@@ -121,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrincipalBuscaRefatorado" />
         <item itemvalue="Application.PrincipalBusca" />
+        <item itemvalue="Application.PrincipalBuscaRefatorado" />
         <item itemvalue="Application.Teste1" />
         <item itemvalue="Application.Teste" />
       </list>
@@ -145,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700615149981</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementação de requisição à API, conversão JSON com Gson,&#10;uso de records como DTO, tratamento de exceções e persistência de dados com FileWriter.">
+      <option name="closed" value="true" />
+      <created>1702244590615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702244590615</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Organização da classe PrincipalBusca, criação de classes no pacote api para delegar funções das requisições.">
+      <option name="closed" value="true" />
+      <created>1702342117149</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702342117149</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +171,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Projeto completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projeto completo" />
+    <MESSAGE value="Implementação de requisição à API, conversão JSON com Gson,&#10;uso de records como DTO, tratamento de exceções e persistência de dados com FileWriter." />
+    <MESSAGE value="Organização da classe PrincipalBusca, criação de classes no pacote api para delegar funções das requisições." />
+    <MESSAGE value="fixup! Organização da classe PrincipalBusca, criação de classes no pacote api para delegar funções das requisições." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! Organização da classe PrincipalBusca, criação de classes no pacote api para delegar funções das requisições." />
   </component>
 </project>
