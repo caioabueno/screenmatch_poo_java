@@ -42,3 +42,4 @@ no objeto e então os dados são persistidos em um arquivo json.
 * Persistência de Dados com FileWriter
 
 ---
+[**Anotações detalhadas**](https://judicious-visitor-abd.notion.site/Forma-o-Aprenda-a-programar-em-Java-com-Orienta-o-a-Objetos-51471855783b4c2ba4ffed29f03d67c3)
