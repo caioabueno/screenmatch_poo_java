@@ -8,8 +8,16 @@ O screenmatch é um sistema para plataforma de filmes onde é possível pesquisa
 O programa basicamente faz a requisição de API e recebe um json contendo as informações de um N filme, esse json é convertido em objeto java, é resserializado com os atributos configurados
 no objeto e então os dados são persistidos em um arquivo json.
 
+<p align="center">
+<img src= "git-assets/presenting.gif">
+</p>
+
 ---
 
+## Dependências
+Para esse rodar essa aplicação você irá precisar do [JDK 17.0.10](https://www.oracle.com/br/java/technologies/downloads/#java17) e da biblioteca [Gson 2.10.1](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.10.1) (essa dependência está inclusa no repositório, mas se você experienciar problemas com os imports pode ser viável adicionar o jar manualmente).
+
+---
 ## Funcionalidades Abordadas
 
 ### Conceitos de Programação Orientada a Objetos (POO)
